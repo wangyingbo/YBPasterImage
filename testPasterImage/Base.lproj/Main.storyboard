@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QgQ-O1-Xhd">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dogs" translatesAutoresizingMaskIntoConstraints="NO" id="G2w-9U-4Gb">
+                                <rect key="frame" x="150" y="50" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.52787255639999997" blue="0.70310303190000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="tp5-ba-KRy"/>
+                                    <constraint firstAttribute="width" constant="300" id="yrU-En-tfa"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTx-v9-NlA">
+                                <rect key="frame" x="270" y="490" width="60" height="30"/>
+                                <state key="normal" title="添加贴纸"/>
+                                <connections>
+                                    <action selector="addPasterImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rHw-dT-HI9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iTx-v9-NlA" secondAttribute="bottom" constant="80" id="gCh-q0-JgD"/>
+                            <constraint firstItem="iTx-v9-NlA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oMf-c3-fEU"/>
+                            <constraint firstItem="G2w-9U-4Gb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qcx-fr-gke"/>
+                            <constraint firstItem="G2w-9U-4Gb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="zhG-sW-bYP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SqV-lq-M6j"/>
+                    <connections>
+                        <outlet property="imageView" destination="G2w-9U-4Gb" id="l5p-ky-0Wh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150" y="348"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ND0-1x-jwS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QgQ-O1-Xhd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UvZ-ui-KyS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ETf-Lr-iLW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="033-7q-yp3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="348"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dogs" width="600" height="600"/>
+    </resources>
+</document>
