@@ -65,7 +65,7 @@
  */
 - (void)setupUI
 {
-    //self.backgroundColor = [UIColor lightGrayColor];
+    self.backgroundColor = [UIColor lightGrayColor];
     
     minWidth = self.bounds.size.width * 0.5;
     minHeight = self.bounds.size.height * 0.5;
@@ -201,6 +201,9 @@
         prevPoint = [recognizer locationInView:self];
         [self setNeedsDisplay];
     }
+    
+    //检查旋转和缩放是否出界
+    [self checkIsOut];
 }
 
 /**

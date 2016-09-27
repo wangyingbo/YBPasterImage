@@ -21,6 +21,8 @@ const CGFloat pasterScrollView_H = 120;
 extern CGFloat inset_space;
 /**默认的图片上的贴纸大小*/
 static const CGFloat defaultPasterViewW_H = 120;
+/**底部按钮的高度*/
+static CGFloat bottomButtonH = 44;
 
 
 @interface YBPasterImageVC ()<YBPasterScrollViewDelegate>
@@ -93,12 +95,12 @@ static const CGFloat defaultPasterViewW_H = 120;
 }
 
 /**
- *  懒加载-get方法设置自定义的scrollView
+ *  懒加载-get方法设置自定义贴纸的scrollView
  */
 - (YBPasterScrollView *)pasterScrollView
 {
     _pasterScrollView = [[YBPasterScrollView alloc]initScrollViewWithPasterImageArray:self.imageArray];
-    _pasterScrollView.frame = CGRectMake(0, FULL_SCREEN_H - pasterScrollView_H, FULL_SCREEN_W, pasterScrollView_H);
+    _pasterScrollView.frame = CGRectMake(0, FULL_SCREEN_H - pasterScrollView_H - bottomButtonH, FULL_SCREEN_W, pasterScrollView_H);
     _pasterScrollView.backgroundColor = [UIColor lightGrayColor];
     _pasterScrollView.showsHorizontalScrollIndicator = YES;
     _pasterScrollView.bounces = YES;
@@ -120,6 +122,12 @@ static const CGFloat defaultPasterViewW_H = 120;
     pasterImageView.userInteractionEnabled = YES;
     [self.view addSubview:pasterImageView];
     self.pasterImageView = pasterImageView;
+    
+    UIView *bottomBackView = [[UIView alloc]initWithFrame:CGRectMake(0, FULL_SCREEN_H - bottomButtonH, FULL_SCREEN_W, bottomButtonH)];
+    bottomBackView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:bottomBackView];
+    
+    
     
 }
 

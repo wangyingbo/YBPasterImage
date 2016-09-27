@@ -7,19 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		681DE30A1D8000CE005AAE0C /* UIImage+AddFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 681DE3081D8000CE005AAE0C /* UIImage+AddFunction.m */; };
-		68377BD31D7D638E00820527 /* YBPasterImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 68377BD21D7D638E00820527 /* YBPasterImageVC.m */; };
-		68377BD81D7D652A00820527 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 68377BD61D7D652A00820527 /* UIViewController+Extension.m */; };
-		68377BDB1D7D67EE00820527 /* YBPasterScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68377BDA1D7D67EE00820527 /* YBPasterScrollView.m */; };
-		68377BE61D7E65EB00820527 /* YBPasterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68377BE51D7E65EB00820527 /* YBPasterView.m */; };
 		68A7FE8F1D7D602E00F3488D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7FE8E1D7D602E00F3488D /* main.m */; };
 		68A7FE921D7D602E00F3488D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7FE911D7D602E00F3488D /* AppDelegate.m */; };
-		68A7FE951D7D602E00F3488D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7FE941D7D602E00F3488D /* ViewController.m */; };
 		68A7FE981D7D602E00F3488D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A7FE961D7D602E00F3488D /* Main.storyboard */; };
 		68A7FE9A1D7D602E00F3488D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68A7FE991D7D602E00F3488D /* Assets.xcassets */; };
 		68A7FE9D1D7D602E00F3488D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A7FE9B1D7D602E00F3488D /* LaunchScreen.storyboard */; };
 		68A7FEA81D7D602E00F3488D /* testPasterImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7FEA71D7D602E00F3488D /* testPasterImageTests.m */; };
 		68A7FEB31D7D602F00F3488D /* testPasterImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7FEB21D7D602F00F3488D /* testPasterImageUITests.m */; };
+		68E54F791D9A13130003BF63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E54F761D9A13130003BF63 /* ViewController.m */; };
+		68E54F7A1D9A13130003BF63 /* YBPasterImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E54F781D9A13130003BF63 /* YBPasterImageVC.m */; };
+		68E54F881D9A13540003BF63 /* UIImage+AddFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E54F851D9A13540003BF63 /* UIImage+AddFunction.m */; };
+		68E54F891D9A13540003BF63 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E54F871D9A13540003BF63 /* UIViewController+Extension.m */; };
+		68E54F901D9A13D10003BF63 /* YBPasterScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E54F8D1D9A13D10003BF63 /* YBPasterScrollView.m */; };
+		68E54F911D9A13D10003BF63 /* YBPasterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E54F8F1D9A13D10003BF63 /* YBPasterView.m */; };
+		E675C631B2BC66F8F7D1FDA0 /* libPods-testPasterImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE1DD9585D80CEC7302FDE3 /* libPods-testPasterImage.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,22 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		681DE3081D8000CE005AAE0C /* UIImage+AddFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AddFunction.m"; sourceTree = "<group>"; };
-		681DE3091D8000CE005AAE0C /* UIImage+AddFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AddFunction.h"; sourceTree = "<group>"; };
-		68377BD11D7D638E00820527 /* YBPasterImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPasterImageVC.h; sourceTree = "<group>"; };
-		68377BD21D7D638E00820527 /* YBPasterImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPasterImageVC.m; sourceTree = "<group>"; };
-		68377BD61D7D652A00820527 /* UIViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
-		68377BD71D7D652A00820527 /* UIViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
-		68377BD91D7D67EE00820527 /* YBPasterScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPasterScrollView.h; sourceTree = "<group>"; };
-		68377BDA1D7D67EE00820527 /* YBPasterScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPasterScrollView.m; sourceTree = "<group>"; };
-		68377BE41D7E65EB00820527 /* YBPasterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPasterView.h; sourceTree = "<group>"; };
-		68377BE51D7E65EB00820527 /* YBPasterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPasterView.m; sourceTree = "<group>"; };
+		0E1D0ACD3D2EAF07D3741914 /* Pods-testPasterImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPasterImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testPasterImage/Pods-testPasterImage.debug.xcconfig"; sourceTree = "<group>"; };
+		3AE1DD9585D80CEC7302FDE3 /* libPods-testPasterImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testPasterImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A7FE8A1D7D602E00F3488D /* testPasterImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testPasterImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A7FE8E1D7D602E00F3488D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68A7FE901D7D602E00F3488D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		68A7FE911D7D602E00F3488D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		68A7FE931D7D602E00F3488D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		68A7FE941D7D602E00F3488D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		68A7FE971D7D602E00F3488D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68A7FE991D7D602E00F3488D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68A7FE9C1D7D602E00F3488D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,6 +57,19 @@
 		68A7FEAE1D7D602F00F3488D /* testPasterImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testPasterImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A7FEB21D7D602F00F3488D /* testPasterImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testPasterImageUITests.m; sourceTree = "<group>"; };
 		68A7FEB41D7D602F00F3488D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68E54F751D9A13130003BF63 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		68E54F761D9A13130003BF63 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		68E54F771D9A13130003BF63 /* YBPasterImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPasterImageVC.h; sourceTree = "<group>"; };
+		68E54F781D9A13130003BF63 /* YBPasterImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPasterImageVC.m; sourceTree = "<group>"; };
+		68E54F841D9A13540003BF63 /* UIImage+AddFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AddFunction.h"; sourceTree = "<group>"; };
+		68E54F851D9A13540003BF63 /* UIImage+AddFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AddFunction.m"; sourceTree = "<group>"; };
+		68E54F861D9A13540003BF63 /* UIViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
+		68E54F871D9A13540003BF63 /* UIViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
+		68E54F8C1D9A13D10003BF63 /* YBPasterScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPasterScrollView.h; sourceTree = "<group>"; };
+		68E54F8D1D9A13D10003BF63 /* YBPasterScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPasterScrollView.m; sourceTree = "<group>"; };
+		68E54F8E1D9A13D10003BF63 /* YBPasterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPasterView.h; sourceTree = "<group>"; };
+		68E54F8F1D9A13D10003BF63 /* YBPasterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPasterView.m; sourceTree = "<group>"; };
+		E2D87E7F14BF62318BD7B391 /* Pods-testPasterImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPasterImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-testPasterImage/Pods-testPasterImage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E675C631B2BC66F8F7D1FDA0 /* libPods-testPasterImage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,39 +98,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		681DE30B1D8009AC005AAE0C /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				68A7FE931D7D602E00F3488D /* ViewController.h */,
-				68A7FE941D7D602E00F3488D /* ViewController.m */,
-				68377BD11D7D638E00820527 /* YBPasterImageVC.h */,
-				68377BD21D7D638E00820527 /* YBPasterImageVC.m */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		681DE30C1D8009BC005AAE0C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				68377BD91D7D67EE00820527 /* YBPasterScrollView.h */,
-				68377BDA1D7D67EE00820527 /* YBPasterScrollView.m */,
-				68377BE41D7E65EB00820527 /* YBPasterView.h */,
-				68377BE51D7E65EB00820527 /* YBPasterView.m */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		681DE30D1D8009BF005AAE0C /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				68377BD71D7D652A00820527 /* UIViewController+Extension.h */,
-				68377BD61D7D652A00820527 /* UIViewController+Extension.m */,
-				681DE3091D8000CE005AAE0C /* UIImage+AddFunction.h */,
-				681DE3081D8000CE005AAE0C /* UIImage+AddFunction.m */,
-			);
-			name = Categories;
-			sourceTree = "<group>";
-		};
 		68A7FE811D7D602E00F3488D = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +105,8 @@
 				68A7FEA61D7D602E00F3488D /* testPasterImageTests */,
 				68A7FEB11D7D602F00F3488D /* testPasterImageUITests */,
 				68A7FE8B1D7D602E00F3488D /* Products */,
+				D37AF9F23C8DBC836EB27BD0 /* Pods */,
+				B81B40EFE9215CE75818B88A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,9 +125,9 @@
 			children = (
 				68A7FE901D7D602E00F3488D /* AppDelegate.h */,
 				68A7FE911D7D602E00F3488D /* AppDelegate.m */,
-				681DE30B1D8009AC005AAE0C /* Controllers */,
-				681DE30C1D8009BC005AAE0C /* Views */,
-				681DE30D1D8009BF005AAE0C /* Categories */,
+				68E54F741D9A12F30003BF63 /* Controllers */,
+				68E54F8A1D9A13D10003BF63 /* Views */,
+				68E54F831D9A13540003BF63 /* Categories */,
 				68A7FE961D7D602E00F3488D /* Main.storyboard */,
 				68A7FE8D1D7D602E00F3488D /* Supporting Files */,
 			);
@@ -189,6 +163,72 @@
 			path = testPasterImageUITests;
 			sourceTree = "<group>";
 		};
+		68E54F741D9A12F30003BF63 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				68E54F751D9A13130003BF63 /* ViewController.h */,
+				68E54F761D9A13130003BF63 /* ViewController.m */,
+				68E54F771D9A13130003BF63 /* YBPasterImageVC.h */,
+				68E54F781D9A13130003BF63 /* YBPasterImageVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		68E54F831D9A13540003BF63 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				68E54F841D9A13540003BF63 /* UIImage+AddFunction.h */,
+				68E54F851D9A13540003BF63 /* UIImage+AddFunction.m */,
+				68E54F861D9A13540003BF63 /* UIViewController+Extension.h */,
+				68E54F871D9A13540003BF63 /* UIViewController+Extension.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		68E54F8A1D9A13D10003BF63 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				68E54F921D9A14010003BF63 /* YBFilterImage */,
+				68E54F8B1D9A13D10003BF63 /* YBPasterImage */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		68E54F8B1D9A13D10003BF63 /* YBPasterImage */ = {
+			isa = PBXGroup;
+			children = (
+				68E54F8C1D9A13D10003BF63 /* YBPasterScrollView.h */,
+				68E54F8D1D9A13D10003BF63 /* YBPasterScrollView.m */,
+				68E54F8E1D9A13D10003BF63 /* YBPasterView.h */,
+				68E54F8F1D9A13D10003BF63 /* YBPasterView.m */,
+			);
+			path = YBPasterImage;
+			sourceTree = "<group>";
+		};
+		68E54F921D9A14010003BF63 /* YBFilterImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = YBFilterImage;
+			sourceTree = "<group>";
+		};
+		B81B40EFE9215CE75818B88A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AE1DD9585D80CEC7302FDE3 /* libPods-testPasterImage.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D37AF9F23C8DBC836EB27BD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E1D0ACD3D2EAF07D3741914 /* Pods-testPasterImage.debug.xcconfig */,
+				E2D87E7F14BF62318BD7B391 /* Pods-testPasterImage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -196,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68A7FEB71D7D602F00F3488D /* Build configuration list for PBXNativeTarget "testPasterImage" */;
 			buildPhases = (
+				F775385417FC25057086136C /* [CP] Check Pods Manifest.lock */,
 				68A7FE861D7D602E00F3488D /* Sources */,
 				68A7FE871D7D602E00F3488D /* Frameworks */,
 				68A7FE881D7D602E00F3488D /* Resources */,
+				B294BE38D838F5CCD14593EA /* [CP] Embed Pods Frameworks */,
+				E89784E5118341200B2A00D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,18 +357,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B294BE38D838F5CCD14593EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testPasterImage/Pods-testPasterImage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E89784E5118341200B2A00D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testPasterImage/Pods-testPasterImage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F775385417FC25057086136C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		68A7FE861D7D602E00F3488D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68377BE61D7E65EB00820527 /* YBPasterView.m in Sources */,
-				68A7FE951D7D602E00F3488D /* ViewController.m in Sources */,
-				68377BDB1D7D67EE00820527 /* YBPasterScrollView.m in Sources */,
-				681DE30A1D8000CE005AAE0C /* UIImage+AddFunction.m in Sources */,
+				68E54F791D9A13130003BF63 /* ViewController.m in Sources */,
+				68E54F7A1D9A13130003BF63 /* YBPasterImageVC.m in Sources */,
+				68E54F881D9A13540003BF63 /* UIImage+AddFunction.m in Sources */,
 				68A7FE921D7D602E00F3488D /* AppDelegate.m in Sources */,
-				68377BD31D7D638E00820527 /* YBPasterImageVC.m in Sources */,
-				68377BD81D7D652A00820527 /* UIViewController+Extension.m in Sources */,
+				68E54F901D9A13D10003BF63 /* YBPasterScrollView.m in Sources */,
+				68E54F891D9A13540003BF63 /* UIViewController+Extension.m in Sources */,
+				68E54F911D9A13D10003BF63 /* YBPasterView.m in Sources */,
 				68A7FE8F1D7D602E00F3488D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +556,7 @@
 		};
 		68A7FEB81D7D602F00F3488D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E1D0ACD3D2EAF07D3741914 /* Pods-testPasterImage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = testPasterImage/Info.plist;
@@ -477,6 +569,7 @@
 		};
 		68A7FEB91D7D602F00F3488D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2D87E7F14BF62318BD7B391 /* Pods-testPasterImage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = testPasterImage/Info.plist;
