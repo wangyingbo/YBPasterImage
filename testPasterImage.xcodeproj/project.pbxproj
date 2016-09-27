@@ -20,6 +20,14 @@
 		68E54F891D9A13540003BF63 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E54F871D9A13540003BF63 /* UIViewController+Extension.m */; };
 		68E54F901D9A13D10003BF63 /* YBPasterScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E54F8D1D9A13D10003BF63 /* YBPasterScrollView.m */; };
 		68E54F911D9A13D10003BF63 /* YBPasterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E54F8F1D9A13D10003BF63 /* YBPasterView.m */; };
+		68E54F961D9A20B00003BF63 /* YBCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E54F951D9A20B00003BF63 /* YBCustomButton.m */; };
+		68E54FE11D9A584B0003BF63 /* YBFilterScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E54FE01D9A584B0003BF63 /* YBFilterScrollView.m */; };
+		68E54FF31D9A6C140003BF63 /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E54FE71D9A6C140003BF63 /* ImageUtil.m */; };
+		68E54FF41D9A6C140003BF63 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E54FEA1D9A6C140003BF63 /* UIImage+Alpha.m */; };
+		68E54FF51D9A6C140003BF63 /* UIImage+Cut.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E54FEC1D9A6C140003BF63 /* UIImage+Cut.m */; };
+		68E54FF61D9A6C140003BF63 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E54FEE1D9A6C140003BF63 /* UIImage+Resize.m */; };
+		68E54FF71D9A6C140003BF63 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E54FF01D9A6C140003BF63 /* UIImage+RoundedCorner.m */; };
+		68E54FF81D9A6C140003BF63 /* UIImage+SplitImageIntoTwoParts.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E54FF21D9A6C140003BF63 /* UIImage+SplitImageIntoTwoParts.m */; };
 		E675C631B2BC66F8F7D1FDA0 /* libPods-testPasterImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE1DD9585D80CEC7302FDE3 /* libPods-testPasterImage.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +77,23 @@
 		68E54F8D1D9A13D10003BF63 /* YBPasterScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPasterScrollView.m; sourceTree = "<group>"; };
 		68E54F8E1D9A13D10003BF63 /* YBPasterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPasterView.h; sourceTree = "<group>"; };
 		68E54F8F1D9A13D10003BF63 /* YBPasterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPasterView.m; sourceTree = "<group>"; };
+		68E54F941D9A20B00003BF63 /* YBCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCustomButton.h; sourceTree = "<group>"; };
+		68E54F951D9A20B00003BF63 /* YBCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCustomButton.m; sourceTree = "<group>"; };
+		68E54FDF1D9A584B0003BF63 /* YBFilterScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBFilterScrollView.h; sourceTree = "<group>"; };
+		68E54FE01D9A584B0003BF63 /* YBFilterScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBFilterScrollView.m; sourceTree = "<group>"; };
+		68E54FE51D9A6C140003BF63 /* ColorMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMatrix.h; sourceTree = "<group>"; };
+		68E54FE61D9A6C140003BF63 /* ImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtil.h; sourceTree = "<group>"; };
+		68E54FE71D9A6C140003BF63 /* ImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtil.m; sourceTree = "<group>"; };
+		68E54FE91D9A6C140003BF63 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		68E54FEA1D9A6C140003BF63 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		68E54FEB1D9A6C140003BF63 /* UIImage+Cut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Cut.h"; sourceTree = "<group>"; };
+		68E54FEC1D9A6C140003BF63 /* UIImage+Cut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Cut.m"; sourceTree = "<group>"; };
+		68E54FED1D9A6C140003BF63 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		68E54FEE1D9A6C140003BF63 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		68E54FEF1D9A6C140003BF63 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		68E54FF01D9A6C140003BF63 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		68E54FF11D9A6C140003BF63 /* UIImage+SplitImageIntoTwoParts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SplitImageIntoTwoParts.h"; sourceTree = "<group>"; };
+		68E54FF21D9A6C140003BF63 /* UIImage+SplitImageIntoTwoParts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SplitImageIntoTwoParts.m"; sourceTree = "<group>"; };
 		E2D87E7F14BF62318BD7B391 /* Pods-testPasterImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPasterImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-testPasterImage/Pods-testPasterImage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +153,7 @@
 				68E54F741D9A12F30003BF63 /* Controllers */,
 				68E54F8A1D9A13D10003BF63 /* Views */,
 				68E54F831D9A13540003BF63 /* Categories */,
+				68E54FE31D9A6C140003BF63 /* Libs */,
 				68A7FE961D7D602E00F3488D /* Main.storyboard */,
 				68A7FE8D1D7D602E00F3488D /* Supporting Files */,
 			);
@@ -188,6 +214,7 @@
 		68E54F8A1D9A13D10003BF63 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				68E54F931D9A20910003BF63 /* YBCustomViews */,
 				68E54F921D9A14010003BF63 /* YBFilterImage */,
 				68E54F8B1D9A13D10003BF63 /* YBPasterImage */,
 			);
@@ -208,8 +235,55 @@
 		68E54F921D9A14010003BF63 /* YBFilterImage */ = {
 			isa = PBXGroup;
 			children = (
+				68E54FDF1D9A584B0003BF63 /* YBFilterScrollView.h */,
+				68E54FE01D9A584B0003BF63 /* YBFilterScrollView.m */,
 			);
 			path = YBFilterImage;
+			sourceTree = "<group>";
+		};
+		68E54F931D9A20910003BF63 /* YBCustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				68E54F941D9A20B00003BF63 /* YBCustomButton.h */,
+				68E54F951D9A20B00003BF63 /* YBCustomButton.m */,
+			);
+			path = YBCustomViews;
+			sourceTree = "<group>";
+		};
+		68E54FE31D9A6C140003BF63 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				68E54FE41D9A6C140003BF63 /* FilterImageLibs */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		68E54FE41D9A6C140003BF63 /* FilterImageLibs */ = {
+			isa = PBXGroup;
+			children = (
+				68E54FE51D9A6C140003BF63 /* ColorMatrix.h */,
+				68E54FE61D9A6C140003BF63 /* ImageUtil.h */,
+				68E54FE71D9A6C140003BF63 /* ImageUtil.m */,
+				68E54FE81D9A6C140003BF63 /* UIImage-Extensions */,
+			);
+			path = FilterImageLibs;
+			sourceTree = "<group>";
+		};
+		68E54FE81D9A6C140003BF63 /* UIImage-Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				68E54FE91D9A6C140003BF63 /* UIImage+Alpha.h */,
+				68E54FEA1D9A6C140003BF63 /* UIImage+Alpha.m */,
+				68E54FEB1D9A6C140003BF63 /* UIImage+Cut.h */,
+				68E54FEC1D9A6C140003BF63 /* UIImage+Cut.m */,
+				68E54FED1D9A6C140003BF63 /* UIImage+Resize.h */,
+				68E54FEE1D9A6C140003BF63 /* UIImage+Resize.m */,
+				68E54FEF1D9A6C140003BF63 /* UIImage+RoundedCorner.h */,
+				68E54FF01D9A6C140003BF63 /* UIImage+RoundedCorner.m */,
+				68E54FF11D9A6C140003BF63 /* UIImage+SplitImageIntoTwoParts.h */,
+				68E54FF21D9A6C140003BF63 /* UIImage+SplitImageIntoTwoParts.m */,
+			);
+			path = "UIImage-Extensions";
 			sourceTree = "<group>";
 		};
 		B81B40EFE9215CE75818B88A /* Frameworks */ = {
@@ -410,14 +484,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68E54FF31D9A6C140003BF63 /* ImageUtil.m in Sources */,
+				68E54FF71D9A6C140003BF63 /* UIImage+RoundedCorner.m in Sources */,
 				68E54F791D9A13130003BF63 /* ViewController.m in Sources */,
 				68E54F7A1D9A13130003BF63 /* YBPasterImageVC.m in Sources */,
+				68E54FE11D9A584B0003BF63 /* YBFilterScrollView.m in Sources */,
 				68E54F881D9A13540003BF63 /* UIImage+AddFunction.m in Sources */,
 				68A7FE921D7D602E00F3488D /* AppDelegate.m in Sources */,
 				68E54F901D9A13D10003BF63 /* YBPasterScrollView.m in Sources */,
+				68E54FF81D9A6C140003BF63 /* UIImage+SplitImageIntoTwoParts.m in Sources */,
 				68E54F891D9A13540003BF63 /* UIViewController+Extension.m in Sources */,
+				68E54FF51D9A6C140003BF63 /* UIImage+Cut.m in Sources */,
+				68E54FF41D9A6C140003BF63 /* UIImage+Alpha.m in Sources */,
 				68E54F911D9A13D10003BF63 /* YBPasterView.m in Sources */,
 				68A7FE8F1D7D602E00F3488D /* main.m in Sources */,
+				68E54F961D9A20B00003BF63 /* YBCustomButton.m in Sources */,
+				68E54FF61D9A6C140003BF63 /* UIImage+Resize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

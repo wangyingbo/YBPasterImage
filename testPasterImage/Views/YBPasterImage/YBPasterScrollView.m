@@ -55,9 +55,10 @@ const CGFloat inset_space = 15;
         UIButton *pasterBtn = [[UIButton alloc]init];
         pasterBtn.frame = CGRectMake((i+1)*inset_space + pasterBtnW_H*i, inset_space, pasterBtnW_H, pasterBtnW_H);
         [pasterBtn setImage:self.pasterImageArray[i] forState:UIControlStateNormal];
+        pasterBtn.layer.borderColor = [UIColor orangeColor].CGColor;
+        pasterBtn.layer.borderWidth = 0.5;
         pasterBtn.tag = 1000 + i;
         [pasterBtn addTarget:self action:@selector(pasterClick:) forControlEvents:UIControlEventTouchUpInside];
-        pasterBtn.backgroundColor = [UIColor redColor];
         [self addSubview:pasterBtn];
     }
 }
