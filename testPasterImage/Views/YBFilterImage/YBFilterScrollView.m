@@ -43,6 +43,12 @@
         [filterBtn addTarget:self action:@selector(filterClick:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:filterBtn];
         
+//        UIImageView *imageView = [[UIImageView alloc]init];
+//        imageView.frame = CGRectMake((i+1)*insert_space + filterBtnW_H*i, insert_space, filterBtnW_H, filterBtnW_H);
+//        imageView.layer.borderColor = [UIColor orangeColor].CGColor;
+//        imageView.layer.borderWidth = 0.5;
+//        imageView.image = [self buttonSetImageWithButton:filterBtn];
+        
         CGFloat labelX = filterBtn.frame.origin.x;
         CGFloat labelY = CGRectGetMaxY(filterBtn.frame) + 5;
         CGFloat labelW = filterBtn.frame.size.width;
@@ -156,7 +162,7 @@
     
     if (_filterDelegate && [_filterDelegate respondsToSelector:@selector(filterImage:)])
     {
-        [_filterDelegate filterImage:self.editedImage];
+        [_filterDelegate filterImage:button.currentBackgroundImage];
     }
     
 }

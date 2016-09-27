@@ -172,12 +172,6 @@ static CGFloat bottomButtonH = 44;
 {
     defaultIndex = 0;
     
-    [self.view addSubview:self.pasterScrollView];
-    self.pasterScrollView.hidden = YES;
-    self.pasterScrollView.alpha = 0.0;
-    
-    [self.view addSubview:self.filterScrollView];
-    
     UIImageView *pasterImageView = [[UIImageView alloc]initWithFrame:CGRectMake(20, 100, FULL_SCREEN_W - 40, FULL_SCREEN_W - 40)];
     pasterImageView.image = self.originalImage;
     pasterImageView.userInteractionEnabled = YES;
@@ -212,6 +206,12 @@ static CGFloat bottomButtonH = 44;
     lineView.backgroundColor = [UIColor redColor];
     [bottomBackView addSubview:lineView];
     self.lineView = lineView;
+    
+    [self.view addSubview:self.pasterScrollView];
+    self.pasterScrollView.hidden = YES;
+    self.pasterScrollView.alpha = 0.0;
+    
+    [self.view addSubview:self.filterScrollView];
 }
 
 /**
@@ -285,8 +285,15 @@ static CGFloat bottomButtonH = 44;
         NSLog(@"完成了添加贴纸");
         [weakSelf.pasterView hiddenBtn];
         if (weakSelf.block) {
-            UIImage *editedImage = [weakSelf doneEdit];
-            weakSelf.block(editedImage);
+            
+            if (weakSelf.pasterViewMutArr.count > 0) {
+                UIImage *editedImage = [weakSelf doneEdit];
+                weakSelf.block(editedImage);
+            }else
+            {
+                weakSelf.block(weakSelf.pasterImageView.image);
+            }
+            
             [weakSelf.pasterImageView removeFromSuperview];
             [weakSelf.filterScrollView removeFromSuperview];
             [weakSelf.navigationController popViewControllerAnimated:YES];
@@ -330,7 +337,7 @@ static CGFloat bottomButtonH = 44;
     [self.pasterImageView addSubview:pasterView];
     self.pasterView = pasterView;
     
-    //[self.pasterViewMutArr addObject:pasterView];
+    [self.pasterViewMutArr addObject:pasterView];
     //NSLog(@"%lu",(unsigned long)self.pasterViewMutArr.count);
     
 }
