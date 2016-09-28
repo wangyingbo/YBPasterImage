@@ -296,7 +296,7 @@ static CGFloat bottomButtonH = 44;
 }
 
 /**
- *  右键
+ *  导航栏的“完成”右键
  */
 - (void)setRightButton
 {
@@ -304,6 +304,7 @@ static CGFloat bottomButtonH = 44;
     }];
     
     WS(weakSelf);
+    //按钮的点击事件封装的block
     weakSelf.rightBtnBlock = ^(NSString *string){
         NSLog(@"完成了添加贴纸");
         [weakSelf.pasterView hiddenBtn];
@@ -322,7 +323,6 @@ static CGFloat bottomButtonH = 44;
             [weakSelf.filterScrollView removeFromSuperview];
             [weakSelf.navigationController popViewControllerAnimated:YES];
         }
-        
     };
 }
 

@@ -32,6 +32,9 @@
 /**YBFilterScrollViewDelegate*/
 @property (nonatomic,weak) id<YBFilterScrollViewDelegate> filterDelegate;
 
+/**
+ *  开始加载滤镜的scrollView
+ */
 - (void)loadScrollView;
 
 

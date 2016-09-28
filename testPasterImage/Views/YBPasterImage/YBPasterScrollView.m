@@ -18,7 +18,6 @@ const CGFloat inset_space = 15;
 
 @interface YBPasterScrollView ()
 
-
 @end
 
 

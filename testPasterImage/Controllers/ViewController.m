@@ -34,10 +34,10 @@
     YBPasterImageVC *pasterVC = [[YBPasterImageVC alloc]init];
     pasterVC.originalImage = self.imageView.image;
     
-    WS(weakSelf);
     pasterVC.block = ^(UIImage *editedImage){
-        weakSelf.imageView.image = editedImage;
+        self.imageView.image = editedImage;
     };
+    
     [self.navigationController pushViewController:pasterVC animated:YES];
     
 }
