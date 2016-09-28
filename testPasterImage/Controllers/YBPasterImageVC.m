@@ -103,6 +103,7 @@ static CGFloat bottomButtonH = 44;
     if (!_pasterViewMutArr) {
         _pasterViewMutArr = [NSMutableArray array];
     }
+    
     return _pasterViewMutArr;
 }
 
@@ -111,13 +112,15 @@ static CGFloat bottomButtonH = 44;
  */
 - (NSArray *)imageArray
 {
-    NSMutableArray *mutArr = [NSMutableArray arrayWithCapacity:0];
-    NSArray *arr = @[@"1",@"2",@"3",@"4",@"5"];
-    for (NSString *imageName in arr) {
-        UIImage *image = [UIImage imageNamed:imageName];
-        [mutArr addObject:image];
+    if (!_imageArray) {
+        NSMutableArray *mutArr = [NSMutableArray arrayWithCapacity:0];
+        NSArray *arr = @[@"1",@"2",@"3",@"4",@"5"];
+        for (NSString *imageName in arr) {
+            UIImage *image = [UIImage imageNamed:imageName];
+            [mutArr addObject:image];
+        }
+        _imageArray = mutArr;
     }
-    _imageArray = mutArr;
     
     return _imageArray;
 }
@@ -170,6 +173,7 @@ static CGFloat bottomButtonH = 44;
  */
 - (void)setupUI
 {
+    //默认选中“滤镜”位置
     defaultIndex = 0;
     
     UIImageView *pasterImageView = [[UIImageView alloc]initWithFrame:CGRectMake(20, 100, FULL_SCREEN_W - 40, FULL_SCREEN_W - 40)];
@@ -207,10 +211,12 @@ static CGFloat bottomButtonH = 44;
     [bottomBackView addSubview:lineView];
     self.lineView = lineView;
     
+    //底部“贴纸”的scrollView
     [self.view addSubview:self.pasterScrollView];
     self.pasterScrollView.hidden = YES;
     self.pasterScrollView.alpha = 0.0;
     
+    //底部“滤镜”的scrollView
     [self.view addSubview:self.filterScrollView];
 }
 
