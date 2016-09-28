@@ -15,8 +15,8 @@ static CGContextRef CreateRGBABitmapContext (CGImageRef inImage)// 返回一个�
 	CGContextRef context = NULL; 
 	CGColorSpaceRef colorSpace; 
 	void *bitmapData; //内存空间的指针，该内存空间的大小等于图像使用RGB通道所占用的字节数。
-	int bitmapByteCount; 
-	int bitmapBytesPerRow;
+	unsigned long bitmapByteCount;
+	unsigned long bitmapBytesPerRow;
     
 	size_t pixelsWide = CGImageGetWidth(inImage); //获取横向的像素点的个数
 	size_t pixelsHigh = CGImageGetHeight(inImage); //纵向
@@ -104,8 +104,8 @@ static void changeRGBA(int *red,int *green,int *blue,int *alpha, const float* f)
 {
 	unsigned char *imgPixel = RequestImagePixelData(inImage);
 	CGImageRef inImageRef = [inImage CGImage];
-	GLuint w = CGImageGetWidth(inImageRef);
-	GLuint h = CGImageGetHeight(inImageRef);
+	size_t w = CGImageGetWidth(inImageRef);
+	size_t h = CGImageGetHeight(inImageRef);
 	
 	int wOff = 0;
 	int pixOff = 0;
@@ -143,7 +143,7 @@ static void changeRGBA(int *red,int *green,int *blue,int *alpha, const float* f)
 
 	int bitsPerComponent = 8;
 	int bitsPerPixel = 32;
-	int bytesPerRow = 4 * w;
+	unsigned long bytesPerRow = 4 * w;
 	CGColorSpaceRef colorSpaceRef = CGColorSpaceCreateDeviceRGB();
 	CGBitmapInfo bitmapInfo = kCGBitmapByteOrderDefault;
 	CGColorRenderingIntent renderingIntent = kCGRenderingIntentDefault;
