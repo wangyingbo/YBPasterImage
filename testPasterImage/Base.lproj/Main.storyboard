@@ -17,14 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dogs" translatesAutoresizingMaskIntoConstraints="NO" id="G2w-9U-4Gb">
-                                <rect key="frame" x="150" y="90" width="300" height="300"/>
-                                <color key="backgroundColor" red="0.95686274510000002" green="0.52787255639999997" blue="0.70310303190000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="tp5-ba-KRy"/>
-                                    <constraint firstAttribute="width" constant="300" id="yrU-En-tfa"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTx-v9-NlA">
                                 <rect key="frame" x="270" y="490" width="60" height="30"/>
                                 <state key="normal" title="添加贴纸"/>
@@ -32,6 +24,14 @@
                                     <action selector="addPasterImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rHw-dT-HI9"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gao4" translatesAutoresizingMaskIntoConstraints="NO" id="G2w-9U-4Gb">
+                                <rect key="frame" x="150" y="90" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.52787255639999997" blue="0.70310303190000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="tp5-ba-KRy"/>
+                                    <constraint firstAttribute="width" constant="300" id="yrU-En-tfa"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -70,6 +70,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dogs" width="600" height="600"/>
+        <image name="gao4" width="426" height="426"/>
     </resources>
 </document>
