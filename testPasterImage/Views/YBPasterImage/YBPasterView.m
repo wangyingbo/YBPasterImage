@@ -56,8 +56,25 @@
  */
 - (void)hiddenBtn
 {
-    self.delegateImageView.hidden = YES;
-    self.scaleImageView.hidden = YES;
+    [UIView animateWithDuration:.5 animations:^{
+        self.delegateImageView.alpha = 0.0;
+        self.delegateImageView.hidden = YES;
+        self.scaleImageView.alpha = 0.0;
+        self.scaleImageView.hidden = YES;
+    }];
+}
+
+/**
+ *  显示删除和缩放按钮
+ */
+- (void)showBtn
+{
+    [UIView animateWithDuration:.5 animations:^{
+        self.delegateImageView.alpha = 1.0;
+        self.scaleImageView.alpha = 1.0;
+        self.delegateImageView.hidden = NO;
+        self.scaleImageView.hidden = NO;
+    }];
 }
 
 /**
@@ -211,7 +228,12 @@
  */
 - (void)btDeletePressed:(UITapGestureRecognizer *)recognizer
 {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(deleteThePaster)])
+    {
+        [self.delegate deleteThePaster];
+    }
     [self removeFromSuperview];
+    
 }
 
 /**
@@ -343,5 +365,6 @@
 shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
     return YES;
 }
+
 
 @end

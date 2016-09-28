@@ -40,7 +40,7 @@ static const CGFloat defaultPasterViewW_H = 120;
 /**底部按钮的高度*/
 static CGFloat bottomButtonH = 44;
 
-@interface YBPasterImageVC ()<YBPasterScrollViewDelegate, YBFilterScrollViewDelegate>
+@interface YBPasterImageVC ()<YBPasterScrollViewDelegate, YBFilterScrollViewDelegate, YBPasterViewDelegate>
 {
     NSInteger defaultIndex;
 }
@@ -235,22 +235,39 @@ static CGFloat bottomButtonH = 44;
  */
 - (void)changeDecorateImageWithButtonTag:(YBCustomButton *)sender
 {
-    if (sender.tag - 5000 == YBImagePaster) {
+    // 当前位置是贴纸
+    if (sender.tag - 5000 == YBImagePaster)
+    {
         [UIView animateWithDuration:.5 animations:^{
             self.pasterScrollView.alpha = 1.0;
             self.pasterScrollView.hidden = NO;
+            
+            if (self.pasterView)
+            {
+                [self.pasterView showBtn];
+            }
         }];
-    }else {
+    }else
+    {
         self.pasterScrollView.hidden = YES;
         self.pasterScrollView.alpha = .0;
+        
+        if (self.pasterView)
+        {
+            [self.pasterView hiddenBtn];
+        }
     }
     
-    if (sender.tag - 5000 == YBImageFilter) {
+    // 当前位置是滤镜
+    if (sender.tag - 5000 == YBImageFilter)
+    {
         [UIView animateWithDuration:.5 animations:^{
             self.filterScrollView.alpha = 1.0;
             self.filterScrollView.hidden = NO;
         }];
-    }else {
+    }
+    else
+    {
         self.filterScrollView.hidden = YES;
         self.filterScrollView.alpha = .0;
     }
@@ -286,10 +303,11 @@ static CGFloat bottomButtonH = 44;
         [weakSelf.pasterView hiddenBtn];
         if (weakSelf.block) {
             
-            if (weakSelf.pasterViewMutArr.count > 0) {
+            if (weakSelf.pasterView != nil) {
                 UIImage *editedImage = [weakSelf doneEdit];
                 weakSelf.block(editedImage);
-            }else
+            }
+            else
             {
                 weakSelf.block(weakSelf.pasterImageView.image);
             }
@@ -315,7 +333,7 @@ static CGFloat bottomButtonH = 44;
     CGFloat inScreenH = self.pasterImageView.frame.size.width / rateOfScreen ;
     
     CGRect rect = CGRectZero ;
-    rect.size = CGSizeMake(FULL_SCREEN_W, inScreenH) ;
+    rect.size = CGSizeMake(self.pasterImageView.frame.size.width, inScreenH) ;
     rect.origin = CGPointMake(0, (self.pasterImageView.frame.size.height - inScreenH) / 2) ;
     
     UIImage *imgTemp = [UIImage getImageFromView:self.pasterImageView] ;
@@ -334,10 +352,11 @@ static CGFloat bottomButtonH = 44;
     YBPasterView *pasterView = [[YBPasterView alloc]initWithFrame:CGRectMake(0, 0, defaultPasterViewW_H, defaultPasterViewW_H)];
     pasterView.center = CGPointMake(self.pasterImageView.frame.size.width/2, self.pasterImageView.frame.size.height/2);
     pasterView.pasterImage = pasterImage;
+    pasterView.delegate = self;
     [self.pasterImageView addSubview:pasterView];
     self.pasterView = pasterView;
     
-    [self.pasterViewMutArr addObject:pasterView];
+    //[self.pasterViewMutArr addObject:pasterView];
     //NSLog(@"%lu",(unsigned long)self.pasterViewMutArr.count);
     
 }
@@ -348,5 +367,9 @@ static CGFloat bottomButtonH = 44;
     self.pasterImageView.image = editedImage;
 }
 
-
+#pragma mark - YBPasterViewDelegate
+- (void)deleteThePaster
+{
+    self.pasterView = nil;
+}
 @end

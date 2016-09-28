@@ -43,7 +43,7 @@
     //创建画板为(400x400)pixels
     if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)])
     {
-        UIGraphicsBeginImageContextWithOptions(size, YES, 0);
+        UIGraphicsBeginImageContextWithOptions(size, YES, 1);
     }
     else
     {
@@ -68,7 +68,7 @@
 + (UIImage *)getImageFromView:(UIView *)theView
 {
     CGSize orgSize = theView.bounds.size ;
-    UIGraphicsBeginImageContextWithOptions(orgSize, YES, theView.layer.contentsScale *2);
+    UIGraphicsBeginImageContextWithOptions(orgSize, NO, 1);
     [theView.layer renderInContext:UIGraphicsGetCurrentContext()]   ;
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext()    ;
     UIGraphicsEndImageContext() ;
