@@ -158,6 +158,8 @@
     if (_filterDelegate && [_filterDelegate respondsToSelector:@selector(filterImage:)])
     {
         [_filterDelegate filterImage:button.currentBackgroundImage];
+        NSString *string =  [_filterDelegate deliverStr:[NSString stringWithFormat:@"%@-%@",[self class],[self.titleArray objectAtIndex:button.tag - 1000]]];
+        NSLog(@"%@",string);
     }
     
 }

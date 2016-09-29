@@ -12,6 +12,8 @@
 @required;
 - (void)filterImage:(UIImage *)editedImage;
 @optional;
+// 测试有返回值的代理
+- (NSString *)deliverStr:(NSString *)originalStr;
 @end
 
 

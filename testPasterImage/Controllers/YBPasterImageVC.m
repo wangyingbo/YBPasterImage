@@ -373,6 +373,16 @@ static CGFloat bottomButtonH = 44;
     self.pasterImageView.image = editedImage;
 }
 
+/**
+ *  测试有返回值的代理
+ */
+- (NSString *)deliverStr:(NSString *)originalStr
+{
+    NSString *string;
+    string = originalStr;
+    return string;
+}
+
 #pragma mark - YBPasterViewDelegate
 - (void)deleteThePaster
 {

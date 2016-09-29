@@ -13,6 +13,7 @@
 /**传给上个页面图片的block*/
 typedef void(^PasterBlock)(UIImage *image);
 
+
 @interface YBPasterImageVC : UIViewController
 /**传数据的block*/
 @property (nonatomic, copy) PasterBlock block;
