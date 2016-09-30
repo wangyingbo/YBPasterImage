@@ -80,11 +80,6 @@ static CGFloat bottomButtonH = 44;
     
 }
 
-- (void)dealloc
-{
-    NSLog(@"dealloc");
-}
-
 /**
  *  设置一些通用属性
  */
