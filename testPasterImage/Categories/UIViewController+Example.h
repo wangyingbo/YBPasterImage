@@ -1,11 +1,10 @@
 //
 //  UIViewController+Example.h
-//  MJRefreshExample
+//  Kergou
 //
-//  Created by MJ Lee on 15/3/12.
-//  Copyright (c) 2015年 小码哥. All rights reserved.
+//  Created by 王迎博 on 16/4/28.
+//  Copyright © 2016年 张帅. All rights reserved.
 //
-
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (Example)
