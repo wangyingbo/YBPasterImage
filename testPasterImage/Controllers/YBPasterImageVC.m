@@ -302,7 +302,7 @@ static CGFloat bottomButtonH = 44;
     WS(weakSelf);
     //按钮的点击事件封装的block
     weakSelf.rightBtnBlock = ^(NSString *string){
-        NSLog(@"完成了添加贴纸");
+        
         [weakSelf.pasterView hiddenBtn];
         if (weakSelf.block) {
             
