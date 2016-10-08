@@ -64,6 +64,10 @@ static CGFloat bottomButtonH = 44;
 
 @end
 
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable" //消除没有用到的变量产生的警告
+
 @implementation YBPasterImageVC
 
 - (void)viewDidLoad {
@@ -300,6 +304,7 @@ static CGFloat bottomButtonH = 44;
     }];
     
     WS(weakSelf);
+    YBWeak(YBPasterImageVC, weakMy);
     //按钮的点击事件封装的block
     weakSelf.rightBtnBlock = ^(NSString *string){
         
@@ -384,4 +389,7 @@ static CGFloat bottomButtonH = 44;
 {
     self.pasterView = nil;
 }
+
+#pragma clang diagnostic pop
+
 @end

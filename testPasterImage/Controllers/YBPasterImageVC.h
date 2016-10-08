@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-
+#define YBWeak(selfName,weakSelf) __weak __typeof(selfName *)weakSelf = self
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self
 /**传给上个页面图片的block*/
 typedef void(^PasterBlock)(UIImage *image);
