@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6828CE0E1DB76A1B00369A7F /* YBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6828CE0D1DB76A1B00369A7F /* YBBaseViewController.m */; };
+		6828CE111DB76A6300369A7F /* UIViewController+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 6828CE101DB76A6300369A7F /* UIViewController+Swizzling.m */; };
 		68A7FE8F1D7D602E00F3488D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7FE8E1D7D602E00F3488D /* main.m */; };
 		68A7FE921D7D602E00F3488D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7FE911D7D602E00F3488D /* AppDelegate.m */; };
 		68A7FE981D7D602E00F3488D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A7FE961D7D602E00F3488D /* Main.storyboard */; };
@@ -52,6 +54,10 @@
 /* Begin PBXFileReference section */
 		0E1D0ACD3D2EAF07D3741914 /* Pods-testPasterImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPasterImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testPasterImage/Pods-testPasterImage.debug.xcconfig"; sourceTree = "<group>"; };
 		3AE1DD9585D80CEC7302FDE3 /* libPods-testPasterImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testPasterImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6828CE0C1DB76A1B00369A7F /* YBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBBaseViewController.h; sourceTree = "<group>"; };
+		6828CE0D1DB76A1B00369A7F /* YBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBBaseViewController.m; sourceTree = "<group>"; };
+		6828CE0F1DB76A6300369A7F /* UIViewController+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzling.h"; sourceTree = "<group>"; };
+		6828CE101DB76A6300369A7F /* UIViewController+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzling.m"; sourceTree = "<group>"; };
 		68A7FE8A1D7D602E00F3488D /* testPasterImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testPasterImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A7FE8E1D7D602E00F3488D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68A7FE901D7D602E00F3488D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -199,6 +205,8 @@
 				68E54F761D9A13130003BF63 /* ViewController.m */,
 				68E54F771D9A13130003BF63 /* YBPasterImageVC.h */,
 				68E54F781D9A13130003BF63 /* YBPasterImageVC.m */,
+				6828CE0C1DB76A1B00369A7F /* YBBaseViewController.h */,
+				6828CE0D1DB76A1B00369A7F /* YBBaseViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -210,6 +218,8 @@
 				68E54F851D9A13540003BF63 /* UIImage+AddFunction.m */,
 				68BA63BE1D9E178B007EF318 /* UIViewController+Example.h */,
 				68BA63BF1D9E178B007EF318 /* UIViewController+Example.m */,
+				6828CE0F1DB76A6300369A7F /* UIViewController+Swizzling.h */,
+				6828CE101DB76A6300369A7F /* UIViewController+Swizzling.m */,
 				68E54F861D9A13540003BF63 /* UIViewController+Extension.h */,
 				68E54F871D9A13540003BF63 /* UIViewController+Extension.m */,
 			);
@@ -493,9 +503,11 @@
 				68E54FF31D9A6C140003BF63 /* ImageUtil.m in Sources */,
 				68BA63C01D9E178B007EF318 /* UIViewController+Example.m in Sources */,
 				68E54FF71D9A6C140003BF63 /* UIImage+RoundedCorner.m in Sources */,
+				6828CE111DB76A6300369A7F /* UIViewController+Swizzling.m in Sources */,
 				68E54F791D9A13130003BF63 /* ViewController.m in Sources */,
 				68E54F7A1D9A13130003BF63 /* YBPasterImageVC.m in Sources */,
 				68E54FE11D9A584B0003BF63 /* YBFilterScrollView.m in Sources */,
+				6828CE0E1DB76A1B00369A7F /* YBBaseViewController.m in Sources */,
 				68E54F881D9A13540003BF63 /* UIImage+AddFunction.m in Sources */,
 				68A7FE921D7D602E00F3488D /* AppDelegate.m in Sources */,
 				68E54F901D9A13D10003BF63 /* YBPasterScrollView.m in Sources */,

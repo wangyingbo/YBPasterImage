@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "YBPasterImageVC.h"
+#import "UIViewController+Swizzling.h"
 
 
 @interface ViewController ()
