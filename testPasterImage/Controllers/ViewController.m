@@ -33,7 +33,7 @@
 - (IBAction)addPasterImage:(UIButton *)sender
 {
     YBPasterImageVC *pasterVC = [[YBPasterImageVC alloc]init];
-    pasterVC.originalImage = self.imageView.image;
+    pasterVC.originalImage = [UIImage imageNamed:@"gao4"];
     
     pasterVC.block = ^(UIImage *editedImage){
         self.imageView.image = editedImage;
