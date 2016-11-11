@@ -45,6 +45,7 @@ static CGFloat bottomButtonH = 44;
 @interface YBPasterImageVC ()<YBPasterScrollViewDelegate, YBFilterScrollViewDelegate, YBPasterViewDelegate>
 {
     NSInteger defaultIndex;
+    NSString* _name;
 }
 /**上部的图片imageView*/
 @property (nonatomic, strong) UIImageView *pasterImageView;
@@ -70,6 +71,22 @@ static CGFloat bottomButtonH = 44;
 #pragma clang diagnostic ignored "-Wunused-variable" //消除没有用到的变量产生的警告
 
 @implementation YBPasterImageVC
+
+
+/**
+ *  初始化一个对象
+ *
+ *  @param name 名字
+ *
+ *  @return 自己
+ */
+- (instancetype)initWithName:(NSString *)name {
+    self = [super init];
+    if(!self) return self;
+    _name = name;
+    return self;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -392,5 +409,6 @@ static CGFloat bottomButtonH = 44;
 }
 
 #pragma clang diagnostic pop
+
 
 @end

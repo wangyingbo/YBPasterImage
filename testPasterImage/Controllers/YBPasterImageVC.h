@@ -19,4 +19,26 @@ typedef void(^PasterBlock)(UIImage *image);
 @property (nonatomic, copy) PasterBlock block;
 /**从上页带回来的原始image*/
 @property (nonatomic, strong) UIImage *originalImage;
+
+
+/**
+ *  初始化一个对象
+ *
+ *  @param name 名字
+ *
+ *  @return 自己
+ */
+- (instancetype)initWithName:(NSString *)name;
+
+
+/**尽量不使用以下形式：
+ @interface B : UIViewController
+ @property (strong) NSString* name;
+ @end
+ //然后使用的时候这个样子：
+ B* vc = [B new];
+ vc.name = @"xx";
+ [self.navigationController push:vc];
+ */
+
 @end
