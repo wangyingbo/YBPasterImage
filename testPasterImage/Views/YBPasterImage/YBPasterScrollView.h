@@ -27,6 +27,10 @@
 /**YBPasterScrollViewDelegate*/
 @property (nonatomic,weak) id<YBPasterScrollViewDelegate> pasterDelegate;
 
+/**默认选中的*/
+@property (nonatomic, strong) UIButton *defaultButton;
+
+
 /**
  *  创建添加贴纸页底部的scrollView
  *

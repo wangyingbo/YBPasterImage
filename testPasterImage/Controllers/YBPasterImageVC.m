@@ -56,7 +56,7 @@ static CGFloat bottomButtonH = 44;
 /**图片数组*/
 @property (nonatomic, copy) NSArray *imageArray;
 /**可变的装多个贴纸标签的数组*/
-@property (nonatomic, copy) NSMutableArray *pasterViewMutArr;
+@property (nonatomic, strong) NSMutableArray *pasterViewMutArr;
 /**贴纸*/
 @property (nonatomic, strong) YBPasterView *pasterView;
 /**底部的公共的按钮*/
@@ -405,7 +405,12 @@ static CGFloat bottomButtonH = 44;
 #pragma mark - YBPasterViewDelegate
 - (void)deleteThePaster
 {
+    self.pasterScrollView.defaultButton.selected = NO;
+    self.pasterScrollView.defaultButton.layer.borderColor = [UIColor clearColor].CGColor;
+    self.pasterScrollView.defaultButton.layer.borderWidth = 0.1;
+    
     self.pasterView = nil;
+    
 }
 
 #pragma clang diagnostic pop

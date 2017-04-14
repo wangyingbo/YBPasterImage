@@ -98,8 +98,8 @@
     
     UIImageView *pasterImageView = [[UIImageView alloc]init];
     pasterImageView.backgroundColor = [UIColor lightGrayColor];
-    pasterImageView.layer.borderColor = [UIColor whiteColor].CGColor;
-    pasterImageView.layer.borderWidth = 1.0;
+    pasterImageView.layer.borderColor = [UIColor redColor].CGColor;
+    pasterImageView.layer.borderWidth = 0.5;
     pasterImageView.userInteractionEnabled = YES;
     [self addSubview:pasterImageView];
     self.pasterImageView = pasterImageView;

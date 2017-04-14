@@ -14,6 +14,9 @@
 
 /**被编辑过的图片*/
 @property (nonatomic, strong) UIImage *editedImage;
+/**默认选中的*/
+@property (nonatomic, strong) UIButton *defaultButton;
+
 
 @end
 
@@ -36,12 +39,18 @@
         CGFloat filterBtnW_H = self.perButtonW_H;
         UIButton *filterBtn = [[UIButton alloc]init];
         filterBtn.frame = CGRectMake((i+1)*insert_space + filterBtnW_H*i, insert_space, filterBtnW_H, filterBtnW_H);
-        filterBtn.layer.borderColor = [UIColor orangeColor].CGColor;
-        filterBtn.layer.borderWidth = 0.5;
+        filterBtn.layer.borderColor = [UIColor clearColor].CGColor;
+        filterBtn.layer.borderWidth = 1.;
         filterBtn.tag = 1000 + i;
         [filterBtn setBackgroundImage:[self buttonSetImageWithButton:filterBtn] forState:UIControlStateNormal];
         [filterBtn addTarget:self action:@selector(filterClick:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:filterBtn];
+        
+        if (i == 0) {
+            filterBtn.selected = YES;
+            self.defaultButton = filterBtn;
+            [self filterClick:filterBtn];
+        }
         
         CGFloat labelX = filterBtn.frame.origin.x;
         CGFloat labelY = CGRectGetMaxY(filterBtn.frame) + 5;
@@ -148,8 +157,24 @@
  */
 - (void)filterClick:(UIButton *)button
 {
-    self.editedImage = button.currentBackgroundImage;
+    //按钮选中状态切换的逻辑
+    self.defaultButton.selected = NO;
+    if (!self.defaultButton.selected) {
+        [UIView animateWithDuration:.5 animations:^{
+            self.defaultButton.layer.borderColor = [UIColor clearColor].CGColor;
+            self.defaultButton.layer.borderWidth = 0.1;
+        }];
+    }
+    button.selected = YES;
+    self.defaultButton = button;
+    if (self.defaultButton.selected) {
+        [UIView animateWithDuration:.5 animations:^{
+            self.defaultButton.layer.borderColor = [UIColor redColor].CGColor;
+            self.defaultButton.layer.borderWidth = 2;
+        }];
+    }
     
+    self.editedImage = button.currentBackgroundImage;
     if (self.editedImage == nil) {
         self.editedImage = self.originImage;
     }

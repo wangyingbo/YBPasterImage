@@ -54,8 +54,8 @@ const CGFloat inset_space = 15;
         UIButton *pasterBtn = [[UIButton alloc]init];
         pasterBtn.frame = CGRectMake((i+1)*inset_space + pasterBtnW_H*i, inset_space, pasterBtnW_H, pasterBtnW_H);
         [pasterBtn setImage:self.pasterImageArray[i] forState:UIControlStateNormal];
-        pasterBtn.layer.borderColor = [UIColor orangeColor].CGColor;
-        pasterBtn.layer.borderWidth = 0.5;
+        //pasterBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+        //pasterBtn.layer.borderWidth = 0.5;
         pasterBtn.tag = 1000 + i;
         [pasterBtn addTarget:self action:@selector(pasterClick:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:pasterBtn];
@@ -67,6 +67,23 @@ const CGFloat inset_space = 15;
  */
 - (void)pasterClick:(UIButton *)sender
 {
+    //按钮选中状态切换的逻辑
+    self.defaultButton.selected = NO;
+    if (!self.defaultButton.selected) {
+        [UIView animateWithDuration:.5 animations:^{
+            self.defaultButton.layer.borderColor = [UIColor clearColor].CGColor;
+            self.defaultButton.layer.borderWidth = 0.1;
+        }];
+    }
+    sender.selected = YES;
+    self.defaultButton = sender;
+    if (self.defaultButton.selected) {
+        [UIView animateWithDuration:.5 animations:^{
+            self.defaultButton.layer.borderColor = [UIColor redColor].CGColor;
+            self.defaultButton.layer.borderWidth = 2;
+        }];
+    }
+    
     if (_pasterDelegate && [_pasterDelegate respondsToSelector:@selector(pasterTag:pasterImage:)]) {
         
         [_pasterDelegate pasterTag:sender.tag - 1000 pasterImage:[self.pasterImageArray objectAtIndex:sender.tag - 1000]];
