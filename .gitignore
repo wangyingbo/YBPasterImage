@@ -1,8 +1,8 @@
 *.xcuserstate
-project.xcworkspace
+#project.xcworkspace
 xcuserdata
 UserInterfaceState.xcuserstate
-project.xcworkspace/
+#project.xcworkspace/
 xcuserdata/
 UserInterface.xcuserstate
 .DS_Store*
