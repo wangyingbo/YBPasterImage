@@ -1,0 +1,17 @@
+{
+  "name": "NBSwipePageView",
+  "version": "0.1",
+  "license": "zlib",
+  "summary": "NBSwipePageView is an Objective-C library for easily creating table-based forms on iOS. It is ideal for settings pages or user data entry tasks.",
+  "homepage": "https://github.com/xuzhe/NBSwipePageView.git",
+  "authors": "Nick Lockwood",
+  "source": {
+    "git": "https://github.com/xuzhe/NBSwipePageView.git",
+    "tag": "0.1"
+  },
+  "source_files": "NBSwipePageView/*.{h,m}",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "5.0"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "537B6586F05AEB9F89F52A1E940931332B028804",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "1a0beb16-39a9-491a-8432-0dfbb1476d54++7897" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "537B6586F05AEB9F89F52A1E940931332B028804" : 0,
+    "1a0beb16-39a9-491a-8432-0dfbb1476d54++7897" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F1E10107-A592-40B8-B4E3-05CD8A7A80E6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "537B6586F05AEB9F89F52A1E940931332B028804" : "testPasterImage\/",
+    "1a0beb16-39a9-491a-8432-0dfbb1476d54++7897" : "testPasterImage\/testPasterImage\/Libs\/FilterImageLibs\/UIImage-Extensions\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "testPasterImage",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "testPasterImage.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn.duapp.com\/appid9kgedf0yca",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1a0beb16-39a9-491a-8432-0dfbb1476d54++7897"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wangyingbo\/YBPasterImage.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "537B6586F05AEB9F89F52A1E940931332B028804"
+    }
+  ]
+}
