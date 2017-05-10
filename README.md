@@ -10,7 +10,7 @@
 >+ 对图片添加标签；
 >+ 对图片添加贴纸。
 
-### 二、怎么给图片添加标签可参考我的另外一个[项目](https://github.com/wangyingbo/YBTagViewLib)，效果图如下(点击动图下载)：
+### 二、怎么给图片添加标签可参考我的另外一个[项目](https://github.com/wangyingbo/YBTagViewLib)，效果图如下：
 
 动图
 
